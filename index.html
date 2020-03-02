@@ -1,0 +1,264 @@
+<html>
+
+    <head>
+    
+        <title>Home Page</title>
+        
+        <link rel="icon" href="homeicon.png" type="image/png" sizes="16x16">
+        
+        <link rel='stylesheet' type='text/css' href='index.css'>
+        
+        <script src="myscripts.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- HERE ARE YOUR FIREBASE and GOOGLE AUTHENICATION IMPORTS -->
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    
+    <body>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        <!--Nav Bar-->
+        <header>  
+            <nav>
+                <span class="movetext">HomeworkHub</span>
+                <img class="" src="HH%20blue.png">
+                <a href="#portion1" class="active">Home</a>
+                <a href="#portion2">About</a>
+                <a href="#portion3">Topics</a>
+                
+            </nav>
+        </header>
+        
+        <div class="bgimg-1" id="portion1">
+          <div class="caption">
+              <br>
+              <h1 style="font-size:50px; color: #00A2FF">Homework Hub</h1>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="info">
+          <h3>Welcome to HomeworkHub</h3>
+          <p>Here at HomeworkHub, discuss about about school! From subjects, to clubs, to sports, to games, and more...</p>
+        </div>
+
+        <div id="portion2" class="portion two">
+          <h2>About</h2>
+        </div>
+
+        <div class="info">
+          <h3>About our Webstie</h3>
+          <p>This website allows you to chat about everything school. It has a variety of subject to talk about (MORE COMING SOON!). We made the user interface as minimalistic as possible so it looks clean and organised so you the user can have an easy time navigating through our website.</p>
+            <p>If you have and inquiries, feel free to send us an email @ivan.lee@ucc.on.ca or @ethan.tsang@ucc.on.ca</p>
+        </div>
+
+        <div class="portion" id="portion3">
+          <h2>Topics</h2>
+        </div>
+
+        <div class="info">
+          <h3>Discover Topics Below</h3>
+          <p>(!These are just examples of what people can talk about. Feel free to talk about anything (RELATED TO THE TOPIC)!)</p>
+            <p>Subjects: Discuss about different subjects like math, science, and most importantly compsci!</p>
+            <p>Sports: Share stories about amazing CSSA moments!</p>
+            <p>Clubs: Discuss about club meetings, what is going on in the club, and cool new upcoming clubs!</p>
+            <p>Gaming: Share servers, and talk about cool games!</p>
+            <p>Plans: Talk about field trips of after school things!</p>
+        </div>
+        
+        <div class="container">
+            <br>
+            <h1><center><u>Topics</u></center></h1>
+            <br>
+            <br>
+            
+            <ul style="background-color: white">
+            <li>
+            <div class="container">
+              <div class="card" style="width:175px">
+                <div class="card-body">
+                  <h4 class="card-title">Subjects</h4>
+                  <a href="loadingpage1.html" class="btn btn-primary stretched-link" style="background-color: navy">To Discussion</a>
+                </div>
+              </div>
+            </div>
+            </li>
+                
+            <li>
+            <div class="container">
+              <div class="card" style="width:175px">
+                <div class="card-body">
+                  <h4 class="card-title">Sports</h4>
+                  <a href="loadingpage2.html" class="btn btn-primary stretched-link" style="background-color: navy">To Discussion</a>
+                </div>
+              </div>
+            </div>
+            </li>
+                
+            <li>
+            <div class="container">
+              <div class="card" style="width:175px">
+                <div class="card-body">
+                  <h4 class="card-title">Clubs</h4>
+                  <a href="loadingpage3.html" class="btn btn-primary stretched-link" style="background-color: navy">To Discussion</a>
+                </div>
+              </div>
+            </div>
+            </li>
+            
+            <li>
+            <div class="container">
+              <div class="card" style="width:175px">
+                <div class="card-body">
+                  <h4 class="card-title">Gaming</h4>
+                  <a href="loadingpage4.html" class="btn btn-primary stretched-link" style="background-color: navy">To Discussion</a>
+                </div>
+              </div>
+            </div>
+            </li>
+            
+            <li>
+            <div class="container">
+              <div class="card" style="width:175px">
+                <div class="card-body">
+                  <h4 class="card-title">Plans</h4>
+                  <a href="loadingpage5.html" class="btn btn-primary stretched-link" style="background-color: navy">To Discussion</a>
+                </div>
+              </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+        
+        <br>
+        <br>
+        
+        <footer class="info" style="background-color: navy">
+            <p>Ivan and Ethan Production</p>
+            <a href="https://github.com/IvanLee23/Assign2" style="color: #00A2FF">Click to go to Github</a>
+        </footer>
+        
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            
+            // Smooth Scroll on clicking nav items
+            $('nav a').click(function () {
+              var $href = $(this).attr('href');
+              $('body').stop().animate({
+                scrollTop: $($href).offset().top
+              }, 1000);
+              return false;
+            });
+
+            // back to top
+            $('#toTop a').click(function () {
+              $('body').animate({
+                scrollTop: 0
+              }, 1000);
+              return false;
+            });
+
+            // Parallaxing + add class active on scroll
+            $(document).scroll(function () {
+
+              // parallaxing
+              var $movebg = $(window).scrollTop() * -0.3;
+              $('.portion').css('background-positionY', ($movebg) + 'px');
+
+              // add class active to nav a on scroll
+              var scrollPos = $(document).scrollTop() + 100;
+              $('nav a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                  $('nav a').removeClass("active");
+                  currLink.addClass("active");
+                }
+              });
+
+              // changing padding of nav a on scroll
+                if (scrollPos > 250) {
+                  $('nav a').addClass('small');
+                  $('nav img').addClass('move');
+                  $('nav span').removeClass('movetext');
+                } else {
+                  $('nav a').removeClass('small');
+                  $('nav img').removeClass('move');
+                  $('nav span').addClass('movetext');
+                }
+
+            });
+            
+            // Your web app's Firebase configuration
+            var config = {
+                apiKey: "AIzaSyAgxg8C3PTR-XOzOZdpyMGQVq9IBugOA3g",
+                authDomain: "basic-d3556.firebaseapp.com",
+                databaseURL: "https://basic-d3556.firebaseio.com",
+                projectId: "basic-d3556",
+                storageBucket: "basic-d3556.appspot.com",
+                messagingSenderId: "1010614760359",
+                appId: "1:1010614760359:web:818dfcc2f8be51401c7c82",
+                measurementId: "G-62WRTET4D4"
+              };
+            firebase.initializeApp(config);
+
+            // Check to see if you are logged in
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user == null) {
+                    document.getElementById("uid").innerHTML = "not logged in";
+                    return;
+                } else {
+                    userId = user.displayName; // you can also get .displayName, .photoURL, .email
+                    userphoto = user.photoURL;
+                    document.getElementById("uid").innerHTML = userId; // display Google uid on page
+
+                    getData();
+
+                } // end user null check
+            }); // end check auth state
+            
+            function signin() {
+                var provider = new firebase.auth.GoogleAuthProvider();
+                firebase.auth().signInWithRedirect(provider).then(function(result) { 
+                    window.location.replace("fbtest.html");
+                });
+            }
+        </script>
+    </body>
+
+</html>
